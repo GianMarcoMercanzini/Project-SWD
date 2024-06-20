@@ -13,6 +13,7 @@ body {
     width: 100%;
     border-bottom: solid;
     border-color: #818181;
+    border-width: 3px;
 }
 
 /* Estilos a los links del header */
@@ -42,7 +43,7 @@ body {
 /* Estilo al active/current link */
 .header a.active {
     background-color: dodgerblue;
-    color: white;
+    color: rgb(236, 236, 236);
     margin-right: 10px;
 }
 
@@ -58,7 +59,7 @@ body {
 
 /* estilo a la barra de busqueda */
 .search-bar {
-    --padding: 14px;
+    --padding: 12.5px;
     width: max-content;
     display: flex;
     align-items: center;
@@ -96,7 +97,7 @@ body {
 
 
 .search-input::placeholder,
-.material-symbols-outlined {
+.material-symbols-outlined[data-type="search"] {
     color: rgba(0, 0, 0, 0.5);
 }
 
@@ -110,24 +111,32 @@ body {
 
 .wrap > *{
     padding: 8px;
-    margin: 8px;
     flex: 1 100%;
 }
 
 
 .main {
     height: 220px;
-    background-color: aqua;
+    background-color: #2e2e2e;
+    border-left: solid;
+    border-color: #818181;
+    border-width: 1px;
 }
  
 
 .side-left {
-    background-color: red;
+    display: flex;
+    flex-direction: column;
+    background-color: #2e2e2e;
+    border-right: solid;
+    border-color: #818181;
+    border-width: 2px;
+    padding: 0;
 }
 
 
 .side-right {
-    background-color: purple;
+    background-color: #2e2e2e;
 }
 
 
@@ -151,4 +160,78 @@ body {
     .side-right{
         order: 2;
     }
+}
+
+.nav {
+    width: 300px;
+}
+
+.nav__link {
+    color: rgb(236, 236, 236);
+    display: block;
+    padding: 10px 100px 10px 10px;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+.nav__link:hover {
+    background: #3b3b3b;
+}
+
+
+.nav__link--inside:hover {
+    background: #3b3b3b;
+    text-align: left;
+}
+
+.nav__link--inside {
+    border-radius: 6px;
+    padding-left: 5px;
+    color: rgb(236, 236, 236);
+    margin-right: 50px;
+}
+
+.list {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0 16px 16px 0;
+}
+
+.list__item {
+    list-style-type: none;
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+}
+
+.list__item--click {
+    cursor: pointer;
+}
+
+.list__button {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.arrow .list__arrow {
+    transform: rotate(90deg);
+}
+
+.list__arrow {
+    margin-left: auto;
+    transition: transform .3s;
+}
+
+.list__show {
+    width: 80%;
+    margin-left: auto;
+    border-left: 2px solid #303440;
+    list-style: none;
+    transition: height .4s;
+    height: 0;
 }
