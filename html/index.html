@@ -9,35 +9,23 @@
     <title>ZonaMutante - Para mutantes</title>
 </head>
 <body>
-    <!--FLEXBOX-->
-    <div class="wrap">
-
-        <!--HEADER-->
-        <header class="header">
-            <a href="#default" class="logo">ZonaMutante</a>
-            <div class="header-right">
-                <a class="active" href="login.html">Iniciar sesión</a>
-                <a class="about" href="#about">Acerca de</a>
+    <!--Barra superior-->
+    <header class="header">
+        <a href="#default" class="logo">ZonaMutante</a>
+        <form>
+            <div class="search-bar">
+                <span class="material-symbols-outlined" data-type="search">search</span>
+                <input class="search-input" type="search" placeholder="Buscar..">
             </div>
-            <form>
-                <div class="search-bar">
-                    <span class="material-symbols-outlined" data-type="search">search</span>
-                    <input class="search-input" type="search" placeholder="Buscar..">
-                </div>
-            </form>
-        </header>
-
-        <!--MAIN-->
-
-        <div class="main">
-            <p style="color: rgb(236, 236, 236);">publicación 1</p>
-            <p style="color: rgb(236, 236, 236);">publicación 2</p>
-            <p style="color: rgb(236, 236, 236);">publicación 3</p>
+        </form>
+        <div class="header-right">
+            <a class="active" href="login.html">Iniciar sesión</a>
         </div>
-
-        <!--SIDEBAR-LEFT-->
-
-        <div class="side side-left">
+    </header>
+    <!--Contenido principal-->
+    <div class="main">
+        <!--Barra lateral izquierda-->
+        <aside class="side side-left">
             <nav class="nav">
                 <ul class="list">
 
@@ -90,18 +78,22 @@
                         </ul>
                 </ul>
             </nav>
-        </div>
-
-        <!--SIDEBAR-RIGHT-->
-
-        <div class="side side-right">
+        </aside>
+        <!--Posteos-->
+        <section class="posts">
+            <p style="color: rgb(236, 236, 236);">publicación 1</p>
+            <p style="color: rgb(236, 236, 236);">publicación 2</p>
+            <p style="color: rgb(236, 236, 236);">publicación 3</p>
+        </section>
+        <!--Barra lateral derecha-->
+        <aside class="side side-right">
             <p style="color: rgb(236, 236, 236);">comunidades populares</p>
             <p style="color: rgb(236, 236, 236);">comunidad 1</p>
             <p style="color: rgb(236, 236, 236);">comunidad 2</p>
             <p style="color: rgb(236, 236, 236);">comunidad 3</p>
             <p style="color: rgb(236, 236, 236);">Ver más...</p>
-        </div>  
-    </div>
+        </aside>   
+    </div> 
     <script src="/js/dropdownMenu.js"></script> 
 </body>
 </html>
